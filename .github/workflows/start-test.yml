@@ -21,10 +21,10 @@ jobs:
           8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIDE/SeleniumIde.sln
+      run: dotnet restore ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIde.sln
 
     - name: Build
-      run: dotnet build ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIDE/SeleniumIde.sln --no-restore
+      run: dotnet build ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIde.sln --no-restore
 
     - name: Test
-      run: dotnet test ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIDE/SeleniumIde.sln --no-build --verbosity normal
+      run: dotnet test ./05-SELENIUMIDE/2-SeleniumIDE/SeleniumIde.sln --no-build --verbosity normal
